@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline{
+  --color-brand-blue: #2563EB;
+  --color-theme-white: #FFFFFF;
+  --color-secondary-grey: #F1F5F9;
+  --color-base-text: #0F172A;
+  --color-footer-text: #64748B;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+
+  --font-primary: var(--font-inter), system-ui, sans-serif;
+  --font-secondary: var(--font-roboto), sans-serif;
+
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
