@@ -38,7 +38,7 @@ export default function Home() {
 
         <div className="container mx-auto flex flex-col gap-10 my-15 md:my-20">
           <p className=" text-4xl md:text-5xl text-bold">Наши преимущества</p>
-          <div className="md:grid md:grid-cols-3 flex flex-row gap-6 overflow-x-auto">
+          <div className="md:grid md:grid-cols-3 flex flex-row gap-6 overflow-x-auto mx-2 md:mx-0">
             <WarningCard/>
             <div className="flex flex-col border-2 rounded-lg border-secondary-grey p-6 gap-6">
               <Image src="/main/clock.svg" alt="clock" className="" width={40} height={40}/>
@@ -81,7 +81,7 @@ export default function Home() {
         <div className="w-full bg-secondary-grey px-0 md:px-12 md:py-20 py-15 flex">
           <div className="container mx-auto flex flex-col gap-10">
             <p className=" font-bold text-4xl text-nowrap flex justify-center md:justify-start  mb-10">Автопарк</p>
-            <div className="lg:grid lg:grid-cols-4 flex flex-row gap-6 overflow-x-auto">
+            <div className="lg:grid lg:grid-cols-4 flex flex-row gap-6 overflow-x-auto mx-2 md:mx-0">
               <div className="">
               < ProductCard/>
               </div>
@@ -125,26 +125,42 @@ export default function Home() {
         </div>
         </div>
         
-        <div className="px-12 py-20">
-            <div className=" rounded-lg bg-secondary-grey md:py-[69px] md:px-[172px] hidden md:block">
-              <div className="flex justify-center text-center flex flex-col gap-6">
-                <p className="text-bold text-5xl">Не нашли ответы на свои вопросы ?</p>
-                <p className="text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
-                  форму ниже или позвоните, чтобы получить консультацию и выбрать идеальный автомобиль. Мы здесь, чтобы помочь!</p>
-                <div>
-                  <button className=" font-primary font-medium bg-brand-blue text-theme-white px-12 py-2 rounded-lg">Задать вопрос</button>
-                </div>
-              </div>
+        <div className="container mx-auto  py-20">
+        <div className="md:h-[380px] md:w-full md:bg-contain bg-no-repeat =bg-center md:bg-[url(/main/bg-for-comments.svg)] h-[560px] bg-[url(/main/bg-for-comments-sm.svg)] bg-contain w-full">
+          <div className="flex justify-center text-center flex-col gap-6 ">
+            <p className="text-bold text-5xl md:my-14 my-10">Не нашли ответы на свои вопросы ?</p>
+            <p className=" text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
+            форму ниже или позвоните, чтобы получить консультацию и выбрать идеальный автомобиль. Мы здесь, чтобы помочь!</p>
+            <div>
+              <button className=" font-primary font-medium bg-brand-blue text-theme-white px-12 py-2 rounded-lg">Задать вопрос</button>
             </div>
-            <div className="block md:hidden flex justify-center text-center flex flex-col gap-6">
-              <p className="text-bold text-5xl">Не нашли ответы на свои вопросы ?</p>
-              <p className="text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
-              форму ниже или позвоните, чтобы получить консультацию и выбрать идеальный автомобиль. Мы здесь, чтобы помочь!</p>
-              <div>
-                <button className=" font-primary font-medium bg-brand-blue text-theme-white px-12 py-2 rounded-lg">Задать вопрос</button>
-              </div>
-            </div>
+          </div>
         </div>
+        </div>
+
+
       </main>
   );
 }
+
+
+        // <div className="px-12 py-20">
+        //     <div className=" rounded-lg bg-secondary-grey md:py-[69px] md:px-[172px] hidden md:block">
+        //       <div className="flex justify-center text-center flex flex-col gap-6">
+        //         <p className="text-bold text-5xl">Не нашли ответы на свои вопросы ?</p>
+        //         <p className="text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
+        //           форму ниже или позвоните, чтобы получить консультацию и выбрать идеальный автомобиль. Мы здесь, чтобы помочь!</p>
+        //         <div>
+        //           <button className=" font-primary font-medium bg-brand-blue text-theme-white px-12 py-2 rounded-lg">Задать вопрос</button>
+        //         </div>
+        //       </div>
+        //     </div>
+        //     <div className="block md:hidden flex justify-center text-center flex flex-col gap-6">
+        //       <p className="text-bold text-5xl">Не нашли ответы на свои вопросы ?</p>
+        //       <p className="text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
+        //       форму ниже или позвоните, чтобы получить консультацию и выбрать идеальный автомобиль. Мы здесь, чтобы помочь!</p>
+        //       <div>
+        //         <button className=" font-primary font-medium bg-brand-blue text-theme-white px-12 py-2 rounded-lg">Задать вопрос</button>
+        //       </div>
+        //     </div>
+        // </div>
