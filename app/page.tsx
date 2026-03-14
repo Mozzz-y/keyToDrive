@@ -124,9 +124,9 @@ export default function Home() {
             </div>
         </div>
         </div>
-        
+
         <div className="container mx-auto py-0 md:py-20">
-        <div className="md:w-auto md:bg-cover bg-no-repeat bg-center md:bg-[url(/main/bg-for-comments.svg)] w-auto bg-[url(/main/bg-for-comments-sm.svg)] bg-auto ">
+        <div className="md:w-auto md:bg-cover bg-no-repeat bg-center md:bg-[url(/main/bg-for-comments.svg)] w-auto bg-[url(/main/bg-for-comments-sm.svg)] bg-auto md:rounded-xl">
           <div className="flex justify-center text-center flex-col gap-6 md:py-5 py-5">
             <p className="text-bold text-5xl">Не нашли ответы на свои вопросы ?</p>
             <p className=" text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
@@ -138,29 +138,6 @@ export default function Home() {
         </div>
         </div>
 
-
       </main>
   );
 }
-
-
-        // <div className="px-12 py-20">
-        //     <div className=" rounded-lg bg-secondary-grey md:py-[69px] md:px-[172px] hidden md:block">
-        //       <div className="flex justify-center text-center flex flex-col gap-6">
-        //         <p className="text-bold text-5xl">Не нашли ответы на свои вопросы ?</p>
-        //         <p className="text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
-        //           форму ниже или позвоните, чтобы получить консультацию и выбрать идеальный автомобиль. Мы здесь, чтобы помочь!</p>
-        //         <div>
-        //           <button className=" font-primary font-medium bg-brand-blue text-theme-white px-12 py-2 rounded-lg">Задать вопрос</button>
-        //         </div>
-        //       </div>
-        //     </div>
-        //     <div className="block md:hidden flex justify-center text-center flex flex-col gap-6">
-        //       <p className="text-bold text-5xl">Не нашли ответы на свои вопросы ?</p>
-        //       <p className="text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
-        //       форму ниже или позвоните, чтобы получить консультацию и выбрать идеальный автомобиль. Мы здесь, чтобы помочь!</p>
-        //       <div>
-        //         <button className=" font-primary font-medium bg-brand-blue text-theme-white px-12 py-2 rounded-lg">Задать вопрос</button>
-        //       </div>
-        //     </div>
-        // </div>
