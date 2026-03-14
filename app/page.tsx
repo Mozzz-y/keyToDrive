@@ -80,7 +80,7 @@ export default function Home() {
 
         <div className="w-full bg-secondary-grey px-0 md:px-12 md:py-20 py-15 flex">
           <div className="container mx-auto flex flex-col gap-10">
-            <p className=" font-bold text-4xl text-nowrap flex justify-center md:justify-start  mb-10">Автопарк</p>
+            <p className=" font-bold text-4xl md:text-5xl text-nowrap flex justify-center md:justify-start  mb-10">Автопарк</p>
             <div className="lg:grid lg:grid-cols-4 flex flex-row gap-6 overflow-x-auto mx-2 md:mx-0">
               <div className="">
               < ProductCard/>
@@ -125,10 +125,10 @@ export default function Home() {
         </div>
         </div>
         
-        <div className="container mx-auto  py-20">
-        <div className="md:h-[380px] md:w-full md:bg-contain bg-no-repeat =bg-center md:bg-[url(/main/bg-for-comments.svg)] h-[560px] bg-[url(/main/bg-for-comments-sm.svg)] bg-contain w-full">
-          <div className="flex justify-center text-center flex-col gap-6 ">
-            <p className="text-bold text-5xl md:my-14 my-10">Не нашли ответы на свои вопросы ?</p>
+        <div className="container mx-auto py-0 md:py-20">
+        <div className="md:w-auto md:bg-cover bg-no-repeat bg-center md:bg-[url(/main/bg-for-comments.svg)] w-auto bg-[url(/main/bg-for-comments-sm.svg)] bg-auto ">
+          <div className="flex justify-center text-center flex-col gap-6 md:py-5 py-5">
+            <p className="text-bold text-5xl">Не нашли ответы на свои вопросы ?</p>
             <p className=" text-footer-text">Наши специалисты готовы ответить на все ваши вопросы по аренде авто 🚗💬! Свяжитесь с нами через
             форму ниже или позвоните, чтобы получить консультацию и выбрать идеальный автомобиль. Мы здесь, чтобы помочь!</p>
             <div>
