@@ -3,14 +3,15 @@ import ProductCard from "@/components/ui/product-card";
 import WarningCard from "@/components/ui/warning-card";
 import PropsCard from "@/components/ui/props-card";
 
+
 export default function Home() {
   const products = [
-  { id: 1, name: 'iPhone 15', price: 89990, imageSrc: '', inStock: true },
-  { id: 2, name: 'MacBook Air', price: 99990, imageSrc: '', inStock: true },
-  { id: 3, name: 'AirPods Pro', price: 24990, imageSrc: '', inStock: false },
-  { id: 4, name: 'iPhone 16', price: 89990, imageSrc: '', inStock: true },
-  { id: 5, name: 'MacBook Pro', price: 99990, imageSrc: '', inStock: true },
-  { id: 6, name: 'AirPods 3', price: 24990, imageSrc: '', inStock: false },
+  {id:1, name: 'iPhone 15', price: 89990, imageSrc: '', inStock: true },
+  {id:2, name: 'MacBook Air', price: 99990, imageSrc: '', inStock: true },
+  {id:3, name: 'AirPods Pro', price: 24990, imageSrc: '', inStock: false },
+  {id:4, name: 'iPhone 16', price: 89990, imageSrc: '', inStock: true },
+  {id:5, name: 'MacBook Pro', price: 99990, imageSrc: '', inStock: true },
+  {id:6, name: 'AirPods 3', price: 24990, imageSrc: '', inStock: false, description: 'Новейший iPhone с динамическим островом и USB-C' },
 ];
   return (
 
@@ -154,6 +155,9 @@ export default function Home() {
             name={product.name}
             price={product.price}
             imageSrc={product.imageSrc}
+            inStock={product.inStock}
+            key={product.id}
+            description={product.description}
           />
         ))}
 

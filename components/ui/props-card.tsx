@@ -1,21 +1,36 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from 'react';
 
 type ProductCardProps = {
-id:number
+id:number;  
 name: string;
 price: number;
 imageSrc: string;
-inStock?: boolean;     // ← необязательный пропс
+inStock?: boolean;  
+description: string;
 };
 
 export default function PropsCard({
-id,
 name, 
 price, 
 imageSrc, 
-inStock = true         // ← значение по умолчанию
-}: ProductCardProps) {
+inStock, 
+description,
+}: ProductCardProps) 
+{
+const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
+const [likes, setLikes] = useState(0);
+const [isLiked, setIsLiked] = useState(false);
+const handleClick = () => {
+    if (isLiked) {
+    setLikes(likes - 1);
+    } else {
+    setLikes(likes + 1);
+    }
+    setIsLiked(!isLiked);
+};
 return (
     <div className="border rounded-lg p-4">
     <div className="relative w-full h-48 mb-4">
@@ -43,6 +58,27 @@ return (
     >
         В корзину
     </button>
+    <div>
+    <button
+    onClick={handleClick}
+    className={`px-4 py-2 rounded ${
+        isLiked 
+        ? 'bg-red-500 text-white' 
+        : 'bg-gray-200 text-gray-700'
+    }`}
+    >
+    {isLiked ? '❤️' : '🤍'} {likes}
+    </button>
+    <button
+        onClick={() => setIsDescriptionVisible(!isDescriptionVisible)}
+        className="mt-2 ml-4 text-blue-500 underline"
+    >
+    {isDescriptionVisible ? 'Скрыть описание' : 'Показать описание'}
+    </button>
+        {isDescriptionVisible && description && (
+        <p className="mt-2 text-gray-500 text-sm">{description}</p>
+    )}
     </div>
+</div>
 );
 }
